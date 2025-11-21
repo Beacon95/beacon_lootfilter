@@ -7,6 +7,7 @@ meta { name = "beaconfilter"; description = "Beacon's edit of riktenx's filter";
 
 
 
+
 /*@ define:module:general
 name: General options
 */
@@ -151,6 +152,7 @@ rule (name:VAR_HHGROUP_STRINGLIST_HIGHLIGHT3_ITEMS) { VAR_HHGROUP_STYLE_HIGHLIGH
 rule (name:VAR_HHGROUP_STRINGLIST_HIGHLIGHT4_ITEMS) { VAR_HHGROUP_STYLE_HIGHLIGHT4_STYLE }
 rule (name:VAR_GENERAL_ITEMS5) { VAR_GENERAL_STYLE5 }
 rule (name:VAR_GENERAL_ITEMS6) { VAR_GENERAL_STYLE6 }
+
 
 
 
@@ -317,7 +319,7 @@ type: stringlist
 group: 'Misc'
 label: 'Hide misc items'
 */
-#define VAR_HIDES_HIDEBYDEFAULT ["Vial","Bucket","Jug","Beer glass","Vial of water","Bucket of water","Jug of water","Bones","Big bones","Ashes","Seaweed","Broken arrow","Empty plant pot","Weeds","Pie dish"]
+#define VAR_HIDES_HIDEBYDEFAULT ["Vial","Bucket","Jug","Beer glass","Vial of water","Bucket of water","Jug of water","Bones","Big bones","Ashes","Seaweed","Broken arrow","Empty plant pot","Weeds","Pie dish","Broken glass]
 apply (name:VAR_HIDES_HIDEBYDEFAULT) { hidden = true; }
 /*@ define:input
 type: stringlist
@@ -334,6 +336,7 @@ label: 'Hide low value skilling resources or biproducts'
 */
 #define VAR_HIDE_SKILL_JUNK ["Oak roots"]
 apply (name:VAR_HIDE_SKILL_JUNK) { hidden = true; }
+
 
 
 
@@ -1477,6 +1480,7 @@ enum: ["Dagannoth ribs","Ensouled dagannoth head","Brimstone key"]
 CONST_DAGANNOTH_RULE (name:VAR_DAGANNOTH_ENUMLIST_FILTER_TERTIARY) {
   hidden = true;
 }
+
 
 
 
@@ -4715,6 +4719,7 @@ CONST_ALCHEMICALHYDRA_RULE (name:VAR_ALCHEMICALHYDRA_ENUMLIST_FILTER_TERTIARY) {
 
 
 
+
 /*@ define:module:cox
 ---
 name: CoX
@@ -4760,6 +4765,7 @@ rule (name:"revitalisation*") {
 rule (name:"xeric's aid*") {
   VAR_COX_XER_USERSTYLE
 }
+
 
 
 
@@ -4826,6 +4832,7 @@ rule (name:"smelling salts*") { VAR_TOA_SMS_STYLE }
 rule (name:"silk dressing*") { VAR_TOA_SLD_STYLE }
 rule (name:"blessed crystal scarab*") { VAR_TOA_BCS_STYLE }
 rule (name:"honey locust*") { VAR_TOA_HNL_STYLE }
+
 
 
 
@@ -5092,6 +5099,7 @@ rule (name:"Urium remains") { VAR_SOM_URIUM_STYLE }
 
 
 
+
 /*@ define:module:defender
 name: Defenders
 */
@@ -5115,6 +5123,7 @@ exampleItemId: 12954
 #define VAR_DEFENDER_EQUIP_DEFENDER_STYLE backgroundColor = "#80000000";showLootbeam = true;sound = 6765;icon = CurrentItem();
 
 rule (name:VAR_DEFENDER_EQUIP_DEFENDER_LIST) { hidden = false; VAR_DEFENDER_EQUIP_DEFENDER_STYLE }
+
 
 
 
@@ -5196,6 +5205,7 @@ rule (name:VAR_UNIQUE_CTIER) { VAR_UNIQUE_CTIER_CUSTOMSTYLE }
 
 
 
+
 /*@ define:module:potions
 ---
 name: Potions
@@ -5252,6 +5262,7 @@ CONST_POTION_HIGHLIGHT("sanfew serum*",         VAR_POTION_SANFEW_USERSTYLE)
 CONST_POTION_HIGHLIGHT("*super combat potion*", VAR_POTION_SUPERCOMBAT_USERSTYLE)
 CONST_POTION_HIGHLIGHT("*ranging potion*",      VAR_POTION_RANGE_USERSTYLE)
 CONST_POTION_HIGHLIGHT("*bastion potion*",      VAR_POTION_BASTION_USERSTYLE)
+
 
 
 
@@ -5331,6 +5342,7 @@ rule (name:["scroll box (master)", "clue scroll (master)", "reward casket (maste
 
 
 
+
 /*@ define:module:herbs
 ---
 name: Herbs
@@ -5395,7 +5407,7 @@ enum: [
   {"label":"Torstol","value":"*torstol"}
 ]
 */
-#define VAR_HERB_HIDE ["*guam leaf","*marrentill","*tarromin","*harralander"]
+#define VAR_HERB_HIDE ["*guam leaf","*marrentill","*tarromin","*harralander","*harralander"]
 
 /*@ define:input:herbs
 type: style
@@ -5412,6 +5424,7 @@ rule (noted:false && name:VAR_HERB_SHOW) { hidden = false; }
 rule (noted:false && name:VAR_HERB_HIDE) { hidden = true; }
 
 rule (noted:false && name:CONST_HERB_HERBS) {}
+
 
 
 
@@ -5438,6 +5451,7 @@ exampleItemId: 11849
 #define VAR_CURRENCY_USERSTYLE textColor = "#beb287";icon = CurrentItem();
 
 apply (name:VAR_CURRENCY_ITEMS) { VAR_CURRENCY_USERSTYLE }
+
 
 
 
@@ -5496,7 +5510,7 @@ label: Style
 group: '++Insane tier'
 exampleItem: Torva platebody (damaged)
 */
-#define VAR_VALUE_T5_CUSTOMSTYLE hidden = false;textColor = "#ff0000";backgroundColor = "#ffffff";borderColor = "#ff0000";textAccent = 3;showLootbeam = true;sound = "loot2.wav";
+#define VAR_VALUE_T5_CUSTOMSTYLE hidden = false;textColor = "#ff0000";backgroundColor = "#ffffff";borderColor = "#ff0000";textAccent = 3;showLootbeam = true;sound = "loot2.wav";menuSort = 99;
 
 /*@ define:input:item_values
 type: style
@@ -5504,7 +5518,7 @@ label: Style
 group: '+Insane tier'
 exampleItem: Zaryte vambraces
 */
-#define VAR_VALUE_T4_CUSTOMSTYLE hidden = false;textColor = "#ffffff";backgroundColor = "#80ff0000";borderColor = "#ffffff";lootbeamColor = "#ff0000";showLootbeam = true;sound = "loot2.wav";
+#define VAR_VALUE_T4_CUSTOMSTYLE hidden = false;textColor = "#ffffff";backgroundColor = "#80ff0000";borderColor = "#ffffff";lootbeamColor = "#ff0000";showLootbeam = true;sound = "loot2.wav";menuSort = 98;
 
 /*@ define:input:item_values
 type: style
@@ -5512,7 +5526,7 @@ label: Style
 group: Insane tier
 exampleItem: Bandos tassets
 */
-#define VAR_VALUE_T3_CUSTOMSTYLE hidden = false;textColor = "#ff66b2";backgroundColor = "#80ffffff";borderColor = "#ff66b2";textAccent = 4;showLootbeam = true;sound = "loot2.wav";
+#define VAR_VALUE_T3_CUSTOMSTYLE hidden = false;textColor = "#ff66b2";backgroundColor = "#80ffffff";borderColor = "#ff66b2";textAccent = 4;showLootbeam = true;sound = "loot2.wav";menuSort = 97;
 
 /*@ define:input:item_values
 type: style
@@ -5520,7 +5534,7 @@ label: Style
 group: High tier
 exampleItem: Abyssal whip
 */
-#define VAR_VALUE_T2_CUSTOMSTYLE hidden = false;textColor = "#ff9600";backgroundColor = "#80ffffff";borderColor = "#ff9600";textAccent = 4;showLootbeam = true;sound = "loot1.wav";
+#define VAR_VALUE_T2_CUSTOMSTYLE hidden = false;textColor = "#ff9600";backgroundColor = "#80ffffff";borderColor = "#ff9600";textAccent = 4;showLootbeam = true;sound = "loot1.wav";menuSort = 96;
 
 /*@ define:input:item_values
 type: style
@@ -5528,7 +5542,7 @@ label: Style
 group: Medium tier
 exampleItem: Dragon pickaxe
 */
-#define VAR_VALUE_T1_CUSTOMSTYLE hidden = false;textColor = "#99ff99";borderColor = "#99ff99";sound = "loot1.wav";
+#define VAR_VALUE_T1_CUSTOMSTYLE hidden = false;textColor = "#99ff99";borderColor = "#99ff99";sound = "loot1.wav";menuSort = 95;
 
 /*@ define:input:item_values
 type: style
@@ -5536,7 +5550,7 @@ label: Style
 group: Low tier
 exampleItem: Rune platebody
 */
-#define VAR_VALUE_T0_CUSTOMSTYLE hidden = false;textColor = "#66b2ff";
+#define VAR_VALUE_T0_CUSTOMSTYLE hidden = false;textColor = "#66b2ff";menuSort = 94;
 
 /*@ define:input
 type: number
