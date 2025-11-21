@@ -216,41 +216,33 @@ apply (name:VAR_JUNK_HIDE_EQUIP_RUNE) { hidden = true; }
 
 
 /*@ define:input
-type: boolean
-group: 'Seeds'
+type: stringlist
+group: 'Alottment Seeds'
 label: 'Hide allotment seeds'
 */
-#define VAR_JUNK_HIDE_SEED_ALLOTMENT true
-
-#define CONST_JUNK_SEED_ALLOTMENT ["Potato seed","Onion seed","Cabbage seed","Tomato seed","Sweetcorn seed","Strawberry seed","Watermelon seed","Snape grass seed"]
-apply (VAR_JUNK_HIDE_SEED_ALLOTMENT && name:CONST_JUNK_SEED_ALLOTMENT) { hidden = true; }
+#define VAR_JUNK_HIDE_SEED_ALLOTMENT ["Potato seed","Onion seed","Cabbage seed","Tomato seed","Sweetcorn seed","Strawberry seed","Watermelon seed","Snape grass seed"]
+apply (name:VAR_JUNK_HIDE_SEED_ALLOTMENT) { hidden = true; }
 /*@ define:input
-type: boolean
-group: 'Seeds'
+type: stringlist
+group: 'Flower Seeds'
 label: 'Hide flower seeds'
 */
-#define VAR_JUNK_HIDE_SEED_FLOWER true
-
-#define CONST_JUNK_SEED_FLOWER ["Marigold seed","Rosemary seed","Nasturtium seed","Woad seed","Limpwurt seed","White lily seed"]
-apply (VAR_JUNK_HIDE_SEED_FLOWER && name:CONST_JUNK_SEED_FLOWER) { hidden = true; }
+#define VAR_JUNK_HIDE_SEED_FLOWER ["Marigold seed","Rosemary seed","Nasturtium seed","Woad seed","Limpwurt seed","White lily seed"]
+apply (name:VAR_JUNK_HIDE_SEED_FLOWER) { hidden = true; }
 /*@ define:input
-type: boolean
-group: 'Seeds'
+type: stringlist
+group: 'Hops Seeds'
 label: 'Hide hops seeds'
 */
-#define VAR_JUNK_HIDE_SEED_HOPS true
-
-#define CONST_JUNK_SEED_HOPS ["Barley seed","Hammerstone seed","Asgarnian seed","Jute seed","Yanillian seed","Krandorian seed","Wildblood seed"]
-apply (VAR_JUNK_HIDE_SEED_HOPS && name:CONST_JUNK_SEED_HOPS) { hidden = true; }
+#define VAR_JUNK_HIDE_SEED_HOPS ["Barley seed","Hammerstone seed","Asgarnian seed","Jute seed","Yanillian seed","Krandorian seed","Wildblood seed"]
+apply (name:VAR_JUNK_HIDE_SEED_HOPS) { hidden = true; }
 /*@ define:input
-type: boolean
-group: 'Seeds'
+type: stringlist
+group: 'Bush Seeds'
 label: 'Hide bush seeds'
 */
-#define VAR_JUNK_HIDE_SEED_BUSH true
-
-#define CONST_JUNK_SEED_BUSH ["Redberry seed","Cadavaberry seed","Dwellberry seed","Jangerberry seed","Whiteberry seed","Poison ivy seed"]
-apply (VAR_JUNK_HIDE_SEED_BUSH && name:CONST_JUNK_SEED_BUSH) { hidden = true; }
+#define VAR_JUNK_HIDE_SEED_BUSH ["Redberry seed","Cadavaberry seed","Dwellberry seed","Jangerberry seed","Whiteberry seed","Poison ivy seed"]
+apply (name:VAR_JUNK_HIDE_SEED_BUSH) { hidden = true; }
 /*@ define:input
 type: stringlist
 group: 'Tree Seeds'
