@@ -172,14 +172,12 @@ label: 'Hide bronze equipment'
 #define VAR_JUNK_HIDE_EQUIP_BRONZE ["Bronze dagger","Bronze mace","Bronze sword","Bronze longsword","Bronze scimitar","Bronze hasta","Bronze warhammer","Bronze battleaxe","Bronze claws","Bronze 2h sword","Bronze halberd","Bronze crossbow","Bronze bolts","Bronze arrow","Bronze brutal","Bronze dart","Bronze javelin","Bronze knife","Bronze med helm","Bronze full helm","Bronze chainbody","Bronze platebody","Bronze platelegs","Bronze plateskirt","Bronze sq shield","Bronze kiteshield","Bronze gloves"]
 apply (name:VAR_JUNK_HIDE_EQUIP_BRONZE) { hidden = true; }
 /*@ define:input
-type: boolean
-group: 'Equipment'
+type: stringlist
+group: 'Iron Equipment'
 label: 'Hide iron equipment'
 */
-#define VAR_JUNK_HIDE_EQUIP_IRON true
-
-#define CONST_JUNK_EQUIP_IRON ["Iron dagger","Iron mace","Iron sword","Iron longsword","Iron scimitar","Iron hasta","Iron warhammer","Iron battleaxe","Iron claws","Iron 2h sword","Iron halberd","Iron crossbow","Iron bolts","Iron arrow","Iron brutal","Iron dart","Iron javelin","Iron knife","Iron med helm","Iron full helm","Iron chainbody","Iron platebody","Iron platelegs","Iron plateskirt","Iron sq shield","Iron kiteshield","Iron gloves"]
-apply (VAR_JUNK_HIDE_EQUIP_IRON && name:CONST_JUNK_EQUIP_IRON) { hidden = true; }
+#define VAR_JUNK_HIDE_EQUIP_IRON ["Iron dagger","Iron mace","Iron sword","Iron longsword","Iron scimitar","Iron hasta","Iron warhammer","Iron battleaxe","Iron claws","Iron 2h sword","Iron halberd","Iron crossbow","Iron bolts","Iron arrow","Iron brutal","Iron dart","Iron javelin","Iron knife","Iron med helm","Iron full helm","Iron chainbody","Iron platebody","Iron platelegs","Iron plateskirt","Iron sq shield","Iron kiteshield","Iron gloves"]
+apply (VAR_JUNK_HIDE_EQUIP_IRON) { hidden = true; }
 /*@ define:input
 type: boolean
 group: 'Equipment'
