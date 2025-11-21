@@ -326,7 +326,7 @@ type: stringlist
 group: 'Misc'
 label: 'Hide misc skilling tools'
 */
-#define VAR_HIDE_MISC_TOOLS ["Hammer","Fishing rod","Lobster pot","Spade"]
+#define VAR_HIDE_MISC_TOOLS ["Hammer","Fishing rod","Lobster pot","Spade","Insect repellent"]
 apply (name:VAR_HIDE_MISC_TOOLS) { hidden = true; }
 
 /*@ define:input
