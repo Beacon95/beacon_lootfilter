@@ -6,6 +6,7 @@ meta { name = "beaconfilter"; description = "Beacon's edit of riktenx's filter";
 
 
 
+
 /*@ define:module:general
 name: General options
 */
@@ -153,6 +154,7 @@ rule (name:VAR_GENERAL_ITEMS6) { VAR_GENERAL_STYLE6 }
 
 
 
+
 /*@ define:module:hidejunk
 name: Junk filtering
 description: |
@@ -204,14 +206,14 @@ type: stringlist
 group: 'Adamant Equipment'
 label: 'Hide adamant equipment'
 */
-#define VAR_JUNK_HIDE_EQUIP_ADAMANT ["Adamant dagger","Adamant mace","Adamant sword","Adamant longsword","Adamant scimitar","Adamant hasta","Adamant warhammer","Adamant battleaxe","Adamant cane","Adamant claws","Adamant 2h sword","Adamant halberd","Adamant crossbow","Adamant bolts","Adamant arrow","Adamant brutal","Adamant dart","Adamant javelin","Adamant knife","Adamant med helm","Adamant full helm","Adamant chainbody","Adamant platebody","Adamant platelegs","Adamant plateskirt","Adamant sq shield","Adamant kiteshield","Adamant gloves"]
+#define VAR_JUNK_HIDE_EQUIP_ADAMANT ["Adamant dagger","Adamant mace","Adamant sword","Adamant longsword","Adamant scimitar","Adamant hasta","Adamant warhammer","Adamant battleaxe","Adamant cane","Adamant claws","Adamant 2h sword","Adamant halberd","Adamant crossbow","Adamant bolts","Adamant arrow","Adamant brutal","Adamant dart","Adamant javelin","Adamant knife","Adamant med helm","Adamant full helm","Adamant chainbody","Adamant platelegs","Adamant plateskirt","Adamant sq shield","Adamant kiteshield","Adamant gloves"]
 apply (name:VAR_JUNK_HIDE_EQUIP_ADAMANT) { hidden = true; }
 /*@ define:input
 type: stringlist
 group: 'Rune Equipment'
 label: 'Hide rune equipment'
 */
-#define VAR_JUNK_HIDE_EQUIP_RUNE ["Rune dagger","Rune mace","Rune sword","Rune longsword","Rune scimitar","Rune hasta","Rune warhammer","Rune battleaxe","Rune claws","Rune 2h sword","Rune halberd","Rune crossbow","Runite bolts","Rune arrow","Rune brutal","Rune dart","Rune javelin","Rune knife","Rune med helm","Rune full helm","Rune chainbody","Rune platebody","Rune platelegs","Rune plateskirt","Rune sq shield","Rune kiteshield","Rune gloves"]
+#define VAR_JUNK_HIDE_EQUIP_RUNE []
 apply (name:VAR_JUNK_HIDE_EQUIP_RUNE) { hidden = true; }
 
 
@@ -248,7 +250,7 @@ type: stringlist
 group: 'Tree Seeds'
 label: 'Hide tree seeds'
 */
-#define VAR_JUNK_HIDE_SEED_TREE ["Acorn", "Willow seed", "Orange tree Seed", "Banana tree seed","Apple tree seed","Pineapple seed"]
+#define VAR_JUNK_HIDE_SEED_TREE ["Acorn","Willow seed","Orange tree Seed","Banana tree seed","Apple tree seed","Pineapple seed"]
 apply (name:VAR_JUNK_HIDE_SEED_TREE) { hidden = true; }
 
 
@@ -257,7 +259,7 @@ type: boolean
 group: 'Clue uniques'
 label: 'Hide beginner uniques'
 */
-#define VAR_JUNK_HIDE_UNIQUE_CLUE_BEGINNER true
+#define VAR_JUNK_HIDE_UNIQUE_CLUE_BEGINNER false
 
 #define CONST_JUNK_UNIQUE_CLUE_BEGINNER ["Mole slippers","Frog slippers","Bear feet","Demon feet","Jester cape","Shoulder parrot","Monk's robe top (t)","Monk's robe (t)","Amulet of defence (t)","Sandwich lady hat","Sandwich lady top","Sandwich lady bottom","Rune scimitar ornament kit (guthix)","Rune scimitar ornament kit (saradomin)","Rune scimitar ornament kit (zamorak)"]
 apply (VAR_JUNK_HIDE_UNIQUE_CLUE_BEGINNER && name:CONST_JUNK_UNIQUE_CLUE_BEGINNER) { hidden = true; }
@@ -266,7 +268,7 @@ type: boolean
 group: 'Clue uniques'
 label: 'Hide easy uniques'
 */
-#define VAR_JUNK_HIDE_UNIQUE_CLUE_EASY true
+#define VAR_JUNK_HIDE_UNIQUE_CLUE_EASY false
 
 #define CONST_JUNK_UNIQUE_CLUE_EASY ["Willow comp bow","Amulet of magic (t)","Team cape zero","Team cape i","Team cape x","Cape of skulls","Golden chef's hat","Golden apron","Wooden shield (g)","Black full helm (t)","Black platebody (t)","Black platelegs (t)","Black plateskirt (t)","Black kiteshield (t)","Black full helm (g)","Black platebody (g)","Black platelegs (g)","Black plateskirt (g)","Black kiteshield (g)","Black shield (h1)","Black shield (h2)","Black shield (h3)","Black shield (h4)","Black shield (h5)","Black helm (h1)","Black helm (h2)","Black helm (h3)","Black helm (h4)","Black helm (h5)","Black platebody (h1)","Black platebody (h2)","Black platebody (h3)","Black platebody (h4)","Black platebody (h5)","Steel full helm (t)","Steel platebody (t)","Steel platelegs (t)","Steel plateskirt (t)","Steel kiteshield (t)","Steel full helm (g)","Steel platebody (g)","Steel platelegs (g)","Steel plateskirt (g)","Steel kiteshield (g)","Iron full helm (t)","Iron platebody (t)","Iron platelegs (t)","Iron plateskirt (t)","Iron kiteshield (t)","Iron full helm (g)","Iron platebody (g)","Iron platelegs (g)","Iron plateskirt (g)","Iron kiteshield (g)","Bronze full helm (t)","Bronze platebody (t)","Bronze platelegs (t)","Bronze plateskirt (t)","Bronze kiteshield (t)","Bronze full helm (g)","Bronze platebody (g)","Bronze platelegs (g)","Bronze plateskirt (g)","Bronze kiteshield (g)","Studded body (g)","Studded chaps (g)","Studded body (t)","Studded chaps (t)","Leather body (g)","Leather chaps (g)","Blue wizard hat (g)","Blue wizard robe (g)","Blue skirt (g)","Blue wizard hat (t)","Blue wizard robe (t)","Blue skirt (t)","Black wizard hat (g)","Black wizard robe (g)","Black skirt (g)","Black wizard hat (t)","Black wizard robe (t)","Black skirt (t)","Monk's robe top (g)","Monk's robe (g)","Saradomin robe top","Saradomin robe legs","Guthix robe top","Guthix robe legs","Zamorak robe top","Zamorak robe legs","Ancient robe top","Ancient robe legs","Armadyl robe top","Armadyl robe legs","Bandos robe top","Bandos robe legs","Bob's red shirt","Bob's green shirt","Bob's blue shirt","Bob's black shirt","Bob's purple shirt","Highwayman mask","Blue beret","Black beret","Red beret","White beret","A powdered wig","Beanie","Imp mask","Goblin mask","Sleeping cap","Flared trousers","Pantaloons","Black cane","Staff of bob the cat","Red elegant shirt","Red elegant blouse","Red elegant legs","Red elegant skirt","Green elegant shirt","Green elegant blouse","Green elegant legs","Green elegant skirt","Blue elegant shirt","Blue elegant blouse","Blue elegant legs","Blue elegant skirt","Amulet of power (t)","Ham joint","Rain bow"]
 apply (VAR_JUNK_HIDE_UNIQUE_CLUE_EASY && name:CONST_JUNK_UNIQUE_CLUE_EASY) { hidden = true; }
@@ -316,6 +318,7 @@ label: Hide these items
 */
 #define VAR_HIDES_HIDEBYDEFAULT ["Vial","Bucket","Jug","Beer glass","Vial of water","Bucket of water","Jug of water","Bones","Big bones","Ashes","Seaweed","Broken arrow","Empty plant pot","Weeds","Hammer","Pie dish"]
 apply (name:VAR_HIDES_HIDEBYDEFAULT) { hidden = true; }
+
 
 
 
@@ -1459,6 +1462,7 @@ enum: ["Dagannoth ribs","Ensouled dagannoth head","Brimstone key"]
 CONST_DAGANNOTH_RULE (name:VAR_DAGANNOTH_ENUMLIST_FILTER_TERTIARY) {
   hidden = true;
 }
+
 
 
 
@@ -4695,6 +4699,7 @@ CONST_ALCHEMICALHYDRA_RULE (name:VAR_ALCHEMICALHYDRA_ENUMLIST_FILTER_TERTIARY) {
 
 
 
+
 /*@ define:module:cox
 ---
 name: CoX
@@ -4740,6 +4745,7 @@ rule (name:"revitalisation*") {
 rule (name:"xeric's aid*") {
   VAR_COX_XER_USERSTYLE
 }
+
 
 
 
@@ -4805,6 +4811,7 @@ rule (name:"smelling salts*") { VAR_TOA_SMS_STYLE }
 rule (name:"silk dressing*") { VAR_TOA_SLD_STYLE }
 rule (name:"blessed crystal scarab*") { VAR_TOA_BCS_STYLE }
 rule (name:"honey locust*") { VAR_TOA_HNL_STYLE }
+
 
 
 
@@ -5069,6 +5076,7 @@ rule (name:"Urium remains") { VAR_SOM_URIUM_STYLE }
 
 
 
+
 /*@ define:module:defender
 name: Defenders
 */
@@ -5092,6 +5100,7 @@ exampleItemId: 12954
 #define VAR_DEFENDER_EQUIP_DEFENDER_STYLE backgroundColor = "#80000000";showLootbeam = true;sound = 6765;icon = CurrentItem();
 
 rule (name:VAR_DEFENDER_EQUIP_DEFENDER_LIST) { hidden = false; VAR_DEFENDER_EQUIP_DEFENDER_STYLE }
+
 
 
 
@@ -5171,6 +5180,7 @@ rule (name:VAR_UNIQUE_CTIER) { VAR_UNIQUE_CTIER_CUSTOMSTYLE }
 
 
 
+
 /*@ define:module:potions
 ---
 name: Potions
@@ -5227,6 +5237,7 @@ CONST_POTION_HIGHLIGHT("sanfew serum*",         VAR_POTION_SANFEW_USERSTYLE)
 CONST_POTION_HIGHLIGHT("*super combat potion*", VAR_POTION_SUPERCOMBAT_USERSTYLE)
 CONST_POTION_HIGHLIGHT("*ranging potion*",      VAR_POTION_RANGE_USERSTYLE)
 CONST_POTION_HIGHLIGHT("*bastion potion*",      VAR_POTION_BASTION_USERSTYLE)
+
 
 
 
@@ -5304,6 +5315,7 @@ rule (name:["scroll box (master)", "clue scroll (master)", "reward casket (maste
 
 
 
+
 /*@ define:module:herbs
 ---
 name: Herbs
@@ -5368,7 +5380,7 @@ enum: [
   {"label":"Torstol","value":"*torstol"}
 ]
 */
-#define VAR_HERB_HIDE ["*guam leaf","*marrentill","*tarromin"]
+#define VAR_HERB_HIDE ["*guam leaf","*marrentill","*tarromin","*harralander"]
 
 /*@ define:input:herbs
 type: style
@@ -5390,6 +5402,7 @@ rule (noted:false && name:CONST_HERB_HERBS) {}
 
 
 
+
 /*@ define:module:currency_/_tokens
 ---
 name: Currency / Tokens
@@ -5399,7 +5412,7 @@ name: Currency / Tokens
 type: stringlist
 label: Currency / Token items
 */
-#define VAR_CURRENCY_ITEMS ["Coins", "Mole claw","Mole skin","Trading sticks","Numulite","Abyssal pearls","Anima-infused bark","Barronite shards","Blood money","Ecto-token","Frog token","Golden nugget","Glistening tear","Hallowed mark","Intelligence","Mark of grace","Mermaid's tear","Minnow","Molch pearl","Nuggets","Stardust","Tokkul","Termites","Unidentified minerals","Warrior guild token","Blessed bone shards","Sun-kissed bones","Ecumenical key shard"]
+#define VAR_CURRENCY_ITEMS ["Coins","Mole claw","Mole skin","Trading sticks","Numulite","Abyssal pearls","Anima-infused bark","Barronite shards","Blood money","Ecto-token","Frog token","Golden nugget","Glistening tear","Hallowed mark","Intelligence","Mark of grace","Mermaid's tear","Minnow","Molch pearl","Nuggets","Stardust","Tokkul","Termites","Unidentified minerals","Warrior guild token","Blessed bone shards","Sun-kissed bones","Ecumenical key shard"]
 
 /*@ define:input:currency_/_tokens
 type: style
@@ -5410,6 +5423,7 @@ exampleItemId: 11849
 #define VAR_CURRENCY_USERSTYLE textColor = "#beb287";icon = CurrentItem();
 
 apply (name:VAR_CURRENCY_ITEMS) { VAR_CURRENCY_USERSTYLE }
+
 
 
 
