@@ -262,14 +262,12 @@ label: 'Hide bush seeds'
 #define CONST_JUNK_SEED_BUSH ["Redberry seed","Cadavaberry seed","Dwellberry seed","Jangerberry seed","Whiteberry seed","Poison ivy seed"]
 apply (VAR_JUNK_HIDE_SEED_BUSH && name:CONST_JUNK_SEED_BUSH) { hidden = true; }
 /*@ define:input
-type: boolean
-group: 'Seeds'
+type: stringlist
+group: 'Tree Seeds'
 label: 'Hide tree seeds'
 */
-#define VAR_JUNK_HIDE_SEED_TREE true
-
-#define CONST_JUNK_SEED_TREE ["Willow seed", "Orange tree Seed", "Banana tree seed"]
-apply (VAR_JUNK_HIDE_SEED_TREE && name:CONST_JUNK_SEED_TREE) { hidden = true; }
+#define VAR_JUNK_HIDE_SEED_TREE ["Acorn", "Willow seed", "Orange tree Seed", "Banana tree seed","Apple tree seed","Pineapple seed"]
+apply (name:VAR_JUNK_HIDE_SEED_TREE) { hidden = true; }
 
 
 /*@ define:input
