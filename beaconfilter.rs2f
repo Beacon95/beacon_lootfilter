@@ -2,7 +2,7 @@
 hidden: true
 name: header
 */
-meta { name = "Beacon's Filter"; description = "Beacon's edit of riktenx's filter"; }
+meta { name = "beaconfilter"; description = "Beacon's edit of riktenx's filter"; }
 
 
 
