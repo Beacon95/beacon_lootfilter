@@ -179,50 +179,40 @@ label: 'Hide iron equipment'
 #define VAR_JUNK_HIDE_EQUIP_IRON ["Iron dagger","Iron mace","Iron sword","Iron longsword","Iron scimitar","Iron hasta","Iron warhammer","Iron battleaxe","Iron claws","Iron 2h sword","Iron halberd","Iron crossbow","Iron bolts","Iron arrow","Iron brutal","Iron dart","Iron javelin","Iron knife","Iron med helm","Iron full helm","Iron chainbody","Iron platebody","Iron platelegs","Iron plateskirt","Iron sq shield","Iron kiteshield","Iron gloves"]
 apply (name:VAR_JUNK_HIDE_EQUIP_IRON) { hidden = true; }
 /*@ define:input
-type: boolean
-group: 'Equipment'
+type: stringlist
+group: 'Steel Equipment'
 label: 'Hide steel equipment'
 */
-#define VAR_JUNK_HIDE_EQUIP_STEEL true
-
-#define CONST_JUNK_EQUIP_STEEL ["Steel dagger","Steel mace","Steel sword","Steel longsword","Steel scimitar","Steel hasta","Steel warhammer","Steel battleaxe","Steel claws","Steel 2h sword","Steel halberd","Steel crossbow","Steel bolts","Steel arrow","Steel brutal","Steel dart","Steel javelin","Steel knife","Steel med helm","Steel full helm","Steel chainbody","Steel platebody","Steel platelegs","Steel plateskirt","Steel sq shield","Steel kiteshield","Steel gloves"]
-apply (VAR_JUNK_HIDE_EQUIP_STEEL && name:CONST_JUNK_EQUIP_STEEL) { hidden = true; }
+#define VAR_JUNK_HIDE_EQUIP_STEEL ["Steel dagger","Steel mace","Steel sword","Steel longsword","Steel scimitar","Steel hasta","Steel warhammer","Steel battleaxe","Steel claws","Steel 2h sword","Steel halberd","Steel crossbow","Steel bolts","Steel arrow","Steel brutal","Steel dart","Steel javelin","Steel knife","Steel med helm","Steel full helm","Steel chainbody","Steel platebody","Steel platelegs","Steel plateskirt","Steel sq shield","Steel kiteshield","Steel gloves"]
+apply (name:VAR_JUNK_HIDE_EQUIP_STEEL) { hidden = true; }
 /*@ define:input
-type: boolean
-group: 'Equipment'
+type: stringlist
+group: 'Black Equipment'
 label: 'Hide black equipment'
 */
-#define VAR_JUNK_HIDE_EQUIP_BLACK true
-
-#define CONST_JUNK_EQUIP_BLACK ["Black dagger","Black mace","Black sword","Black longsword","Black scimitar","Black warhammer","Black battleaxe","Black claws","Black 2h sword","Black halberd","Black brutal","Black dart","Black knife","Black med helm","Black full helm","Black chainbody","Black platebody","Black platelegs","Black plateskirt","Black sq shield","Black kiteshield","Black gloves","Elite black full helm","Elite black platebody","Elite black platelegs"]
-apply (VAR_JUNK_HIDE_EQUIP_BLACK && name:CONST_JUNK_EQUIP_BLACK) { hidden = true; }
+#define VAR_JUNK_HIDE_EQUIP_BLACK ["Black dagger","Black mace","Black sword","Black longsword","Black scimitar","Black warhammer","Black battleaxe","Black claws","Black 2h sword","Black halberd","Black brutal","Black dart","Black knife","Black med helm","Black full helm","Black chainbody","Black platebody","Black platelegs","Black plateskirt","Black sq shield","Black kiteshield","Black gloves","Elite black full helm","Elite black platebody","Elite black platelegs"]
+apply (name:VAR_JUNK_HIDE_EQUIP_BLACK) { hidden = true; }
 /*@ define:input
 type: boolean
-group: 'Equipment'
+group: 'Mithril Equipment'
 label: 'Hide mithril equipment'
 */
-#define VAR_JUNK_HIDE_EQUIP_MITHRIL true
-
-#define CONST_JUNK_EQUIP_MITHRIL ["Mithril dagger","Mithril mace","Mithril sword","Mithril longsword","Mithril scimitar","Mithril hasta","Mithril warhammer","Mithril battleaxe","Mithril claws","Mithril 2h sword","Mithril halberd","Mithril crossbow","Mithril bolts","Mithril arrow","Mithril brutal","Mithril dart","Mithril javelin","Mithril knife","Mithril med helm","Mithril full helm","Mithril chainbody","Mithril platebody","Mithril platelegs","Mithril plateskirt","Mithril sq shield","Mithril kiteshield","Mithril gloves"]
-apply (VAR_JUNK_HIDE_EQUIP_MITHRIL && name:CONST_JUNK_EQUIP_MITHRIL) { hidden = true; }
+#define VAR_JUNK_HIDE_EQUIP_MITHRIL ["Mithril dagger","Mithril mace","Mithril sword","Mithril longsword","Mithril scimitar","Mithril hasta","Mithril warhammer","Mithril battleaxe","Mithril claws","Mithril 2h sword","Mithril halberd","Mithril crossbow","Mithril bolts","Mithril arrow","Mithril brutal","Mithril dart","Mithril javelin","Mithril knife","Mithril med helm","Mithril full helm","Mithril chainbody","Mithril platebody","Mithril platelegs","Mithril plateskirt","Mithril sq shield","Mithril kiteshield","Mithril gloves"]
+apply (name:VAR_JUNK_HIDE_EQUIP_MITHRIL) { hidden = true; }
 /*@ define:input
-type: boolean
-group: 'Equipment'
+type: stringlist
+group: 'Adamant Equipment'
 label: 'Hide adamant equipment'
 */
-#define VAR_JUNK_HIDE_EQUIP_ADAMANT true
-
-#define CONST_JUNK_EQUIP_ADAMANT ["Adamant dagger","Adamant mace","Adamant sword","Adamant longsword","Adamant scimitar","Adamant hasta","Adamant warhammer","Adamant battleaxe","Adamant cane","Adamant claws","Adamant 2h sword","Adamant halberd","Adamant crossbow","Adamant bolts","Adamant arrow","Adamant brutal","Adamant dart","Adamant javelin","Adamant knife","Adamant med helm","Adamant full helm","Adamant chainbody","Adamant platebody","Adamant platelegs","Adamant plateskirt","Adamant sq shield","Adamant kiteshield","Adamant gloves"]
-apply (VAR_JUNK_HIDE_EQUIP_ADAMANT && name:CONST_JUNK_EQUIP_ADAMANT) { hidden = true; }
+#define VAR_JUNK_HIDE_EQUIP_ADAMANT ["Adamant dagger","Adamant mace","Adamant sword","Adamant longsword","Adamant scimitar","Adamant hasta","Adamant warhammer","Adamant battleaxe","Adamant cane","Adamant claws","Adamant 2h sword","Adamant halberd","Adamant crossbow","Adamant bolts","Adamant arrow","Adamant brutal","Adamant dart","Adamant javelin","Adamant knife","Adamant med helm","Adamant full helm","Adamant chainbody","Adamant platebody","Adamant platelegs","Adamant plateskirt","Adamant sq shield","Adamant kiteshield","Adamant gloves"]
+apply (name:VAR_JUNK_HIDE_EQUIP_ADAMANT) { hidden = true; }
 /*@ define:input
-type: boolean
-group: 'Equipment'
+type: stringlist
+group: 'Rune Equipment'
 label: 'Hide rune equipment'
 */
-#define VAR_JUNK_HIDE_EQUIP_RUNE false
-
-#define CONST_JUNK_EQUIP_RUNE ["Rune dagger","Rune mace","Rune sword","Rune longsword","Rune scimitar","Rune hasta","Rune warhammer","Rune battleaxe","Rune claws","Rune 2h sword","Rune halberd","Rune crossbow","Runite bolts","Rune arrow","Rune brutal","Rune dart","Rune javelin","Rune knife","Rune med helm","Rune full helm","Rune chainbody","Rune platebody","Rune platelegs","Rune plateskirt","Rune sq shield","Rune kiteshield","Rune gloves"]
-apply (VAR_JUNK_HIDE_EQUIP_RUNE && name:CONST_JUNK_EQUIP_RUNE) { hidden = true; }
+#define VAR_JUNK_HIDE_EQUIP_RUNE ["Rune dagger","Rune mace","Rune sword","Rune longsword","Rune scimitar","Rune hasta","Rune warhammer","Rune battleaxe","Rune claws","Rune 2h sword","Rune halberd","Rune crossbow","Runite bolts","Rune arrow","Rune brutal","Rune dart","Rune javelin","Rune knife","Rune med helm","Rune full helm","Rune chainbody","Rune platebody","Rune platelegs","Rune plateskirt","Rune sq shield","Rune kiteshield","Rune gloves"]
+apply (name:VAR_JUNK_HIDE_EQUIP_RUNE) { hidden = true; }
 
 
 /*@ define:input
