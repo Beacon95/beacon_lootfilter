@@ -166,7 +166,7 @@ description: |
 
 /*@ define:input
 type: stringlist
-group: 'Equipment'
+group: 'Bronze Equipment'
 label: 'Hide bronze equipment'
 */
 #define VAR_JUNK_HIDE_EQUIP_BRONZE ["Bronze dagger","Bronze mace","Bronze sword","Bronze longsword","Bronze scimitar","Bronze hasta","Bronze warhammer","Bronze battleaxe","Bronze claws","Bronze 2h sword","Bronze halberd","Bronze crossbow","Bronze bolts","Bronze arrow","Bronze brutal","Bronze dart","Bronze javelin","Bronze knife","Bronze med helm","Bronze full helm","Bronze chainbody","Bronze platebody","Bronze platelegs","Bronze plateskirt","Bronze sq shield","Bronze kiteshield","Bronze gloves"]
