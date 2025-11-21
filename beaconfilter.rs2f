@@ -5130,7 +5130,7 @@ type: stringlist
 label: Items
 group: Tier B
 */
-#define VAR_UNIQUE_BTIER ["dark totem","mossy key","giant key","ecumenical key","abyssal head","araxyte head","alchemical hydra heads","kbd heads","kq head*","dark claw","bludgeon claw","bludgeon spine","bludgeon axon","hydra's eye","hydra's fang","hydra's heart","strangled tablet","scarred tablet","sirenic tablet","frozen tablet","scurrius' spine","vorkath's head"]
+#define VAR_UNIQUE_BTIER ["dark totem","mossy key","giant key","ecumenical key","abyssal head","araxyte head","alchemical hydra heads","kbd heads","kq head*","dark claw","bludgeon claw","bludgeon spine","bludgeon axon","hydra's eye","hydra's fang","hydra's heart","strangled tablet","scarred tablet","sirenic tablet","frozen tablet","scurrius' spine"]
 
 /*@ define:input:uniques
 type: stringlist
@@ -5145,7 +5145,7 @@ label: Style
 group: Tier S
 exampleItem: Executioner's axe head
 */
-#define VAR_UNIQUE_STIER_CUSTOMSTYLE hidden = false;textColor = "#ff0000";backgroundColor = "#ffffff";borderColor = "#ff0000";fontType = 3;showLootbeam = true;
+#define VAR_UNIQUE_STIER_CUSTOMSTYLE hidden = false;textColor = "#ff0000";backgroundColor = "#ffffff";borderColor = "#ff0000";fontType = 3;showLootbeam = true;sound = "loot2.wav";
 
 /*@ define:input:uniques
 type: style
@@ -5153,7 +5153,7 @@ label: Style
 group: Tier A
 exampleItem: Brimstone key
 */
-#define VAR_UNIQUE_ATIER_CUSTOMSTYLE hidden = false;textColor = "#ffffff";backgroundColor = "#af6025";borderColor = "#ffffff";textAccent = 3;showLootbeam = true;
+#define VAR_UNIQUE_ATIER_CUSTOMSTYLE hidden = false;textColor = "#ffffff";backgroundColor = "#af6025";borderColor = "#ffffff";textAccent = 3;showLootbeam = true;sound = "loot1.wav";
 
 /*@ define:input:uniques
 type: style
@@ -5161,7 +5161,7 @@ label: Style
 group: Tier B
 exampleItem: Araxyte head
 */
-#define VAR_UNIQUE_BTIER_CUSTOMSTYLE hidden = false;textColor = "#000000";backgroundColor = "#af6025";borderColor = "#000000";textAccent = 3;
+#define VAR_UNIQUE_BTIER_CUSTOMSTYLE hidden = false;textColor = "#000000";backgroundColor = "#af6025";borderColor = "#000000";textAccent = 3;showLootbeam = true;sound = "loot1.wav";
 
 /*@ define:input:uniques
 type: style
@@ -5438,35 +5438,35 @@ type: number
 label: Value
 group: '++Insane tier'
 */
-#define VAR_VALUE_T5_VALUE 100000000
+#define VAR_VALUE_T5_VALUE 99989989
 
 /*@ define:input:item_values
 type: number
 label: Value
 group: '+Insane tier'
 */
-#define VAR_VALUE_T4_VALUE 50000000
+#define VAR_VALUE_T4_VALUE 49989899
 
 /*@ define:input:item_values
 type: number
 label: Value
 group: Insane tier
 */
-#define VAR_VALUE_T3_VALUE 10000000
+#define VAR_VALUE_T3_VALUE 9989998
 
 /*@ define:input:item_values
 type: number
 label: Value
 group: High tier
 */
-#define VAR_VALUE_T2_VALUE 1000000
+#define VAR_VALUE_T2_VALUE 9989099
 
 /*@ define:input:item_values
 type: number
 label: Value
 group: Medium tier
 */
-#define VAR_VALUE_T1_VALUE 100000
+#define VAR_VALUE_T1_VALUE 99898
 
 /*@ define:input:item_values
 type: number
