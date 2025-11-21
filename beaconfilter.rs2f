@@ -319,7 +319,7 @@ type: stringlist
 group: 'Misc'
 label: 'Hide misc items'
 */
-#define VAR_HIDES_HIDEBYDEFAULT ["Vial","Bucket","Jug","Beer glass","Vial of water","Bucket of water","Jug of water","Bones","Big bones","Ashes","Seaweed","Broken arrow","Empty plant pot","Weeds","Pie dish","Broken glass"]
+#define VAR_HIDES_HIDEBYDEFAULT ["Vial","Bucket","Jug","Beer glass","Beer","Vial of water","Bucket of water","Jug of water","Bones","Big bones","Ashes","Seaweed","Broken arrow","Empty plant pot","Weeds","Pie dish","Broken glass"]
 apply (name:VAR_HIDES_HIDEBYDEFAULT) { hidden = true; }
 /*@ define:input
 type: stringlist
@@ -5414,7 +5414,7 @@ type: style
 label: Style
 exampleItem: Grimy torstol
 */
-#define VAR_HERB_CUSTOMSTYLE hidden = false;textColor = "#00ff00";
+#define VAR_HERB_CUSTOMSTYLE hidden = false;textColor = "#00ff00";menuSort = 90;
 
 apply (noted:false && name:CONST_HERB_HERBS) { VAR_HERB_CUSTOMSTYLE }
 
@@ -5448,7 +5448,7 @@ label: Style
 exampleItem: Mark of grace
 exampleItemId: 11849
 */
-#define VAR_CURRENCY_USERSTYLE textColor = "#beb287";icon = CurrentItem();
+#define VAR_CURRENCY_USERSTYLE textColor = "#beb287";icon = CurrentItem();menuSort = 99;
 
 apply (name:VAR_CURRENCY_ITEMS) { VAR_CURRENCY_USERSTYLE }
 
