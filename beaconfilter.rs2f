@@ -4710,28 +4710,28 @@ type: style
 label: Overload
 group: potions
 */
-#define VAR_COX_OVL_USERSTYLE textColor = "#1e88e5";textAccent = 4;
+#define VAR_COX_OVL_USERSTYLE textColor = "#ff000000";backgroundColor = "#ff838383";textAccent = 1;showValue = false;icon = CurrentItem();
 
 /*@ define:input:cox
 type: style
 label: Prayer enhance
 group: potions
 */
-#define VAR_COX_PEH_USERSTYLE textColor = "#ff00ff";textAccent = 4;
+#define VAR_COX_PEH_USERSTYLE backgroundColor = "#33ff00ff";textAccent = 1;icon = CurrentItem();
 
 /*@ define:input:cox
 type: style
 label: Revitalisation
 group: potions
 */
-#define VAR_COX_REV_USERSTYLE textColor = "#e91e63";textAccent = 4;
+#define VAR_COX_REV_USERSTYLE textColor = "#e91e63";backgroundColor = "#40e81e61";textAccent = 1;icon = CurrentItem();
 
 /*@ define:input:cox
 type: style
 label: Xeric's aid
 group: potions
 */
-#define VAR_COX_XER_USERSTYLE textColor = "#ffff00";textAccent = 4;
+#define VAR_COX_XER_USERSTYLE textColor = "#ffff00";backgroundColor = "#3bffff00";textAccent = 1;icon = CurrentItem();
 
 rule (name:"overload*") {
   VAR_COX_OVL_USERSTYLE
@@ -4824,35 +4824,35 @@ type: style
 group: Bronze keys
 label: Bronze key black
 */
-#define VAR_SOM_BRONZEBLACK_STYLE hidden = false;textColor = "#ffffff";backgroundColor = "#5b462a";borderColor = "#000000";
+#define VAR_SOM_BRONZEBLACK_STYLE hidden = false;textColor = "#ffffff";backgroundColor = "#de5c462a";borderColor = "#000000";
 
 /*@ define:input
 type: style
 group: Bronze keys
 label: Bronze key purple
 */
-#define VAR_SOM_BRONZEPURPLE_STYLE hidden = false;textColor = "#ffffff";backgroundColor = "#5b462a";borderColor = "#800080";
+#define VAR_SOM_BRONZEPURPLE_STYLE hidden = false;textColor = "#ffffff";backgroundColor = "#de5c462a";borderColor = "#800080";
 
 /*@ define:input
 type: style
 group: Bronze keys
 label: Bronze key red
 */
-#define VAR_SOM_BRONZERED_STYLE hidden = false;textColor = "#ffffff";backgroundColor = "#5b462a";borderColor = "#a00000";
+#define VAR_SOM_BRONZERED_STYLE hidden = false;textColor = "#ffffff";backgroundColor = "#de5c462a";borderColor = "#a00000";
 
 /*@ define:input
 type: style
 group: Bronze keys
 label: Bronze key brown
 */
-#define VAR_SOM_BRONZEBROWN_STYLE hidden = false;textColor = "#ffffff";backgroundColor = "#5b462a";borderColor = "#964b00";
+#define VAR_SOM_BRONZEBROWN_STYLE hidden = false;textColor = "#ffffff";backgroundColor = "#de5c462a";borderColor = "#964b00";
 
 /*@ define:input
 type: style
 group: Bronze keys
 label: Bronze key crimson
 */
-#define VAR_SOM_BRONZECRIMSON_STYLE hidden = false;textColor = "#ffffff";backgroundColor = "#5b462a";borderColor = "#ff143c";
+#define VAR_SOM_BRONZECRIMSON_STYLE hidden = false;textColor = "#ffffff";backgroundColor = "#de5c462a";borderColor = "#ff143c";
 
 /*@ define:input
 type: style
@@ -4894,35 +4894,35 @@ type: style
 group: Black keys
 label: Black key black
 */
-#define VAR_SOM_BLACKBLACK_STYLE hidden = false;textColor = "#ffffff";backgroundColor = "#000000";borderColor = "#000000";
+#define VAR_SOM_BLACKBLACK_STYLE hidden = false;textColor = "#ffffff";backgroundColor = "#cc000000";borderColor = "#000000";
 
 /*@ define:input
 type: style
 group: Black keys
 label: Black key purple
 */
-#define VAR_SOM_BLACKPURPLE_STYLE hidden = false;textColor = "#ffffff";backgroundColor = "#000000";borderColor = "#800080";
+#define VAR_SOM_BLACKPURPLE_STYLE hidden = false;textColor = "#ffffff";backgroundColor = "#cc000000";borderColor = "#800080";
 
 /*@ define:input
 type: style
 group: Black keys
 label: Black key red
 */
-#define VAR_SOM_BLACKRED_STYLE hidden = false;textColor = "#ffffff";backgroundColor = "#000000";borderColor = "#a00000";
+#define VAR_SOM_BLACKRED_STYLE hidden = false;textColor = "#ffffff";backgroundColor = "#cc000000";borderColor = "#a00000";
 
 /*@ define:input
 type: style
 group: Black keys
 label: Black key brown
 */
-#define VAR_SOM_BLACKBROWN_STYLE hidden = false;textColor = "#ffffff";backgroundColor = "#000000";borderColor = "#964b00";
+#define VAR_SOM_BLACKBROWN_STYLE hidden = false;textColor = "#ffffff";backgroundColor = "#cc000000";borderColor = "#964b00";
 
 /*@ define:input
 type: style
 group: Black keys
 label: Black key crimson
 */
-#define VAR_SOM_BLACKCRIMSON_STYLE hidden = false;textColor = "#ffffff";backgroundColor = "#000000";borderColor = "#ff143c";
+#define VAR_SOM_BLACKCRIMSON_STYLE hidden = false;textColor = "#ffffff";backgroundColor = "#cc000000";borderColor = "#ff143c";
 
 /*@ define:input
 type: style
@@ -5145,7 +5145,7 @@ label: Style
 group: Tier S
 exampleItem: Executioner's axe head
 */
-#define VAR_UNIQUE_STIER_CUSTOMSTYLE hidden = false;textColor = "#ff0000";backgroundColor = "#ffffff";borderColor = "#ff0000";fontType = 3;showLootbeam = true;sound = "loot2.wav";
+#define VAR_UNIQUE_STIER_CUSTOMSTYLE hidden = false;textColor = "#ff0000";backgroundColor = "#ffffff";borderColor = "#ff0000";fontType = 3;showLootbeam = true;sound = "loot2.wav";icon = CurrentItem();
 
 /*@ define:input:uniques
 type: style
@@ -5153,7 +5153,7 @@ label: Style
 group: Tier A
 exampleItem: Brimstone key
 */
-#define VAR_UNIQUE_ATIER_CUSTOMSTYLE hidden = false;textColor = "#ffffff";backgroundColor = "#af6025";borderColor = "#ffffff";textAccent = 3;showLootbeam = true;sound = "loot1.wav";
+#define VAR_UNIQUE_ATIER_CUSTOMSTYLE hidden = false;textColor = "#ffffff";backgroundColor = "#af6025";borderColor = "#ffffff";textAccent = 3;showLootbeam = true;sound = "loot1.wav";icon = CurrentItem();
 
 /*@ define:input:uniques
 type: style
@@ -5161,7 +5161,7 @@ label: Style
 group: Tier B
 exampleItem: Araxyte head
 */
-#define VAR_UNIQUE_BTIER_CUSTOMSTYLE hidden = false;textColor = "#000000";backgroundColor = "#af6025";borderColor = "#000000";textAccent = 3;showLootbeam = true;sound = "loot1.wav";
+#define VAR_UNIQUE_BTIER_CUSTOMSTYLE hidden = false;textColor = "#000000";backgroundColor = "#af6025";borderColor = "#000000";textAccent = 3;showLootbeam = true;sound = "loot1.wav";icon = CurrentItem();
 
 /*@ define:input:uniques
 type: style
@@ -5169,7 +5169,7 @@ label: Style
 group: Tier C
 exampleItem: Dark totem top
 */
-#define VAR_UNIQUE_CTIER_CUSTOMSTYLE hidden = false;textColor = "#af6025";backgroundColor = "#350d0d";borderColor = "#af6025";textAccent = 3;
+#define VAR_UNIQUE_CTIER_CUSTOMSTYLE hidden = false;textColor = "#af6025";backgroundColor = "#350d0d";borderColor = "#af6025";textAccent = 3;icon = CurrentItem();
 
 rule (name:VAR_UNIQUE_STIER) { VAR_UNIQUE_STIER_CUSTOMSTYLE }
 rule (name:VAR_UNIQUE_ATIER) { VAR_UNIQUE_ATIER_CUSTOMSTYLE }
@@ -5259,37 +5259,37 @@ description: |
 type: style
 label: Beginner clue
 */
-#define VAR_CLUE_BEGINNER_CUSTOMSTYLE hidden = false;textColor = "#ffffff";backgroundColor = "#beb287";borderColor = "#ffffff";menuTextColor = "#ffe0e0e0";
+#define VAR_CLUE_BEGINNER_CUSTOMSTYLE hidden = false;textColor = "#ffffff";backgroundColor = "#beb287";borderColor = "#ffffff";menuTextColor = "#ffe0e0e0";icon = CurrentItem();
 
 /*@ define:input:clues
 type: style
 label: Easy clue
 */
-#define VAR_CLUE_EASY_CUSTOMSTYLE hidden = false;textColor = "#00ff00";backgroundColor = "#beb287";borderColor = "#00ff00";menuTextColor = "#29802d";
+#define VAR_CLUE_EASY_CUSTOMSTYLE hidden = false;textColor = "#00ff00";backgroundColor = "#beb287";borderColor = "#00ff00";menuTextColor = "#29802d";icon = CurrentItem();
 
 /*@ define:input:clues
 type: style
 label: Medium clue
 */
-#define VAR_CLUE_MEDIUM_CUSTOMSTYLE hidden = false;textColor = "#00ffff";backgroundColor = "#beb287";borderColor = "#00ffff";menuTextColor = "#569699";
+#define VAR_CLUE_MEDIUM_CUSTOMSTYLE hidden = false;textColor = "#00ffff";backgroundColor = "#beb287";borderColor = "#00ffff";menuTextColor = "#569699";icon = CurrentItem();
 
 /*@ define:input:clues
 type: style
 label: Hard clue
 */
-#define VAR_CLUE_HARD_CUSTOMSTYLE hidden = false;textColor = "#ff00ff";backgroundColor = "#beb287";borderColor = "#ff00ff";menuTextColor = "#833798";
+#define VAR_CLUE_HARD_CUSTOMSTYLE hidden = false;textColor = "#ff00ff";backgroundColor = "#beb287";borderColor = "#ff00ff";menuTextColor = "#833798";icon = CurrentItem();
 
 /*@ define:input:clues
 type: style
 label: Elite clue
 */
-#define VAR_CLUE_ELITE_CUSTOMSTYLE hidden = false;textColor = "#ffff00";backgroundColor = "#beb287";borderColor = "#ffff00";menuTextColor = "#bda518";
+#define VAR_CLUE_ELITE_CUSTOMSTYLE hidden = false;textColor = "#ffff00";backgroundColor = "#beb287";borderColor = "#ffff00";menuTextColor = "#bda518";icon = CurrentItem();
 
 /*@ define:input:clues
 type: style
 label: Master clue
 */
-#define VAR_CLUE_MASTER_CUSTOMSTYLE hidden = false;textColor = "#ff0000";backgroundColor = "#beb287";borderColor = "#ff0000";menuTextColor = "#9b3026";
+#define VAR_CLUE_MASTER_CUSTOMSTYLE hidden = false;textColor = "#ff0000";backgroundColor = "#beb287";borderColor = "#ff0000";menuTextColor = "#9b3026";icon = CurrentItem();
 
 
 rule (name:["scroll box (beginner)", "clue scroll (beginner)", "reward casket (beginner)", "challenge scroll (beginner)"]) {
