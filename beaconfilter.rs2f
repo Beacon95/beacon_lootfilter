@@ -177,7 +177,7 @@ group: 'Iron Equipment'
 label: 'Hide iron equipment'
 */
 #define VAR_JUNK_HIDE_EQUIP_IRON ["Iron dagger","Iron mace","Iron sword","Iron longsword","Iron scimitar","Iron hasta","Iron warhammer","Iron battleaxe","Iron claws","Iron 2h sword","Iron halberd","Iron crossbow","Iron bolts","Iron arrow","Iron brutal","Iron dart","Iron javelin","Iron knife","Iron med helm","Iron full helm","Iron chainbody","Iron platebody","Iron platelegs","Iron plateskirt","Iron sq shield","Iron kiteshield","Iron gloves"]
-apply (VAR_JUNK_HIDE_EQUIP_IRON) { hidden = true; }
+apply (name:VAR_JUNK_HIDE_EQUIP_IRON) { hidden = true; }
 /*@ define:input
 type: boolean
 group: 'Equipment'
@@ -5419,7 +5419,7 @@ name: Currency / Tokens
 type: stringlist
 label: Currency / Token items
 */
-#define VAR_CURRENCY_ITEMS ["Mole claw","Mole skin","Trading sticks","Numulite","Abyssal pearls","Anima-infused bark","Barronite shards","Blood money","Ecto-token","Frog token","Golden nugget","Glistening tear","Hallowed mark","Intelligence","Mark of grace","Mermaid's tear","Minnow","Molch pearl","Nuggets","Stardust","Tokkul","Termites","Unidentified minerals","Warrior guild token","Blessed bone shards","Sun-kissed bones","Ecumenical key shard"]
+#define VAR_CURRENCY_ITEMS ["Coins", "Mole claw","Mole skin","Trading sticks","Numulite","Abyssal pearls","Anima-infused bark","Barronite shards","Blood money","Ecto-token","Frog token","Golden nugget","Glistening tear","Hallowed mark","Intelligence","Mark of grace","Mermaid's tear","Minnow","Molch pearl","Nuggets","Stardust","Tokkul","Termites","Unidentified minerals","Warrior guild token","Blessed bone shards","Sun-kissed bones","Ecumenical key shard"]
 
 /*@ define:input:currency_/_tokens
 type: style
