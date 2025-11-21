@@ -252,7 +252,7 @@ type: stringlist
 group: 'Tree Seeds'
 label: 'Hide tree seeds'
 */
-#define VAR_JUNK_HIDE_SEED_TREE ["Acorn","Willow seed","Orange tree Seed","Banana tree seed","Apple tree seed","Pineapple seed","Teak seed"]
+#define VAR_JUNK_HIDE_SEED_TREE ["Acorn","Willow seed","Orange tree Seed","Banana tree seed","Apple tree seed","Pineapple seed","Teak seed","Curry tree seed"]
 apply (name:VAR_JUNK_HIDE_SEED_TREE) { hidden = true; }
 
 
