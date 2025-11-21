@@ -326,15 +326,15 @@ type: stringlist
 group: 'Misc'
 label: 'Hide misc skilling tools'
 */
-#define VAR_HIDE_MISC_TOOLS ["Hammer","Fishing rod","Lobster pot"]
+#define VAR_HIDE_MISC_TOOLS ["Hammer","Fishing rod","Lobster pot","Spade"]
 apply (name:VAR_HIDE_MISC_TOOLS) { hidden = true; }
 
 /*@ define:input
 type: stringlist
 group: 'Misc'
-label: 'Hide low value skilling resources or biproducts'
+label: 'Hide low value resources'
 */
-#define VAR_HIDE_SKILL_JUNK ["Oak roots"]
+#define VAR_HIDE_SKILL_JUNK ["Logs", "Oak logs", "Willow logs", "Maple logs", "Yew logs", "Oak roots", "Willow roots", "Maple roots", "Yew roots"]
 apply (name:VAR_HIDE_SKILL_JUNK) { hidden = true; }
 
 
