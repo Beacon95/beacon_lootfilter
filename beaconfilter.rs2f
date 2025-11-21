@@ -254,6 +254,7 @@ label: 'Hide tree seeds'
 apply (name:VAR_JUNK_HIDE_SEED_TREE) { hidden = true; }
 
 
+
 /*@ define:input
 type: boolean
 group: 'Clue uniques'
@@ -313,12 +314,26 @@ apply (VAR_JUNK_HIDE_UNIQUE_CLUE_MASTER && name:CONST_JUNK_UNIQUE_CLUE_MASTER) {
 
 /*@ define:input
 type: stringlist
-group: Misc
-label: Hide these items
+group: 'Misc'
+label: 'Hide misc items'
 */
-#define VAR_HIDES_HIDEBYDEFAULT ["Vial","Bucket","Jug","Beer glass","Vial of water","Bucket of water","Jug of water","Bones","Big bones","Ashes","Seaweed","Broken arrow","Empty plant pot","Weeds","Hammer","Pie dish"]
+#define VAR_HIDES_HIDEBYDEFAULT ["Vial","Bucket","Jug","Beer glass","Vial of water","Bucket of water","Jug of water","Bones","Big bones","Ashes","Seaweed","Broken arrow","Empty plant pot","Weeds","Pie dish"]
 apply (name:VAR_HIDES_HIDEBYDEFAULT) { hidden = true; }
+/*@ define:input
+type: stringlist
+group: 'Misc'
+label: 'Hide misc skilling tools'
+*/
+#define VAR_HIDE_MISC_TOOLS ["Hammer","Fishing rod","Lobster pot"]
+apply (name:VAR_HIDE_MISC_TOOLS) { hidden = true; }
 
+/*@ define:input
+type: stringlist
+group: 'Misc'
+label: 'Hide low value skilling resources or biproducts'
+*/
+#define VAR_HIDE_SKILL_JUNK ["Oak roots"]
+apply (name:VAR_HIDE_SKILL_JUNK) { hidden = true; }
 
 
 
