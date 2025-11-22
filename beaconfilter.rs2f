@@ -5154,7 +5154,7 @@ type: stringlist
 label: Items
 group: Tier B
 */
-#define VAR_UNIQUE_BTIER ["dark totem","mossy key","giant key","ecumenical key","abyssal head","araxyte head","alchemical hydra heads","kbd heads","kq head*","dark claw","bludgeon claw","bludgeon spine","bludgeon axon","hydra's eye","hydra's fang","hydra's heart","strangled tablet","scarred tablet","sirenic tablet","frozen tablet","scurrius' spine"]
+#define VAR_UNIQUE_BTIER ["Ancient shard","dark totem","mossy key","giant key","ecumenical key","abyssal head","araxyte head","alchemical hydra heads","kbd heads","kq head*","dark claw","bludgeon claw","bludgeon spine","bludgeon axon","hydra's eye","hydra's fang","hydra's heart","strangled tablet","scarred tablet","sirenic tablet","frozen tablet","scurrius' spine"]
 
 /*@ define:input:uniques
 type: stringlist
@@ -5448,7 +5448,7 @@ label: Style
 exampleItem: Mark of grace
 exampleItemId: 11849
 */
-#define VAR_CURRENCY_USERSTYLE textColor = "#beb287";icon = CurrentItem();menuSort = 99;
+#define VAR_CURRENCY_USERSTYLE textColor = "#beb287";icon = CurrentItem();
 
 apply (name:VAR_CURRENCY_ITEMS) { VAR_CURRENCY_USERSTYLE }
 
