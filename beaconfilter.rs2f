@@ -319,7 +319,7 @@ type: stringlist
 group: 'Misc'
 label: 'Hide misc items'
 */
-#define VAR_HIDES_HIDEBYDEFAULT ["Vial","Bucket","Jug","Beer glass","Beer","Vial of water","Bucket of water","Jug of water","Bowl","Leather boots","Bones","Big bones","Ashes","Seaweed","Broken arrow","Empty plant pot","Weeds","Pie dish","Broken glass"]
+#define VAR_HIDES_HIDEBYDEFAULT ["Vial","Bucket","Jug","Pot","Beer glass","Beer","Vial of water","Bucket of water","Jug of water","Bowl of water","Bowl","Leather boots","Bones","Big bones","Ashes","Seaweed","Broken arrow","Empty plant pot","Weeds","Pie dish","Broken glass"]
 apply (name:VAR_HIDES_HIDEBYDEFAULT) { hidden = true; }
 /*@ define:input
 type: stringlist
@@ -334,7 +334,7 @@ type: stringlist
 group: 'Misc'
 label: 'Hide low value resources'
 */
-#define VAR_HIDE_SKILL_JUNK ["Logs", "Oak logs", "Willow logs", "Maple logs", "Yew logs", "Oak roots", "Willow roots", "Maple roots", "Yew roots","Raw bird meat","Cabbage"]
+#define VAR_HIDE_SKILL_JUNK ["Logs", "Oak logs", "Willow logs", "Maple logs", "Yew logs", "Oak roots", "Willow roots", "Maple roots", "Yew roots","Raw bird meat","Cabbage","Potato"]
 apply (name:VAR_HIDE_SKILL_JUNK) { hidden = true; }
 
 
