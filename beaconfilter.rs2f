@@ -334,7 +334,7 @@ type: stringlist
 group: 'Misc'
 label: 'Hide low value resources'
 */
-#define VAR_HIDE_SKILL_JUNK ["Logs", "Oak logs", "Willow logs", "Maple logs", "Yew logs", "Oak roots", "Willow roots", "Maple roots", "Yew roots","Raw bird meat","Cabbage","Potato"]
+#define VAR_HIDE_SKILL_JUNK ["Logs", "Oak logs", "Willow logs", "Maple logs", "Yew logs", "Oak roots", "Willow roots", "Maple roots", "Yew roots","Raw bird meat","Cabbage","Potato","Thread"]
 apply (name:VAR_HIDE_SKILL_JUNK) { hidden = true; }
 
 
