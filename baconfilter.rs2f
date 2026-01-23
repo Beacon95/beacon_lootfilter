@@ -9,6 +9,7 @@ meta { name = "baconfilter"; }
 
 
 
+
 /*@ define:module:general
 name: General options
 */
@@ -153,6 +154,7 @@ rule (name:VAR_HHGROUP_STRINGLIST_HIGHLIGHT3_ITEMS) { VAR_HHGROUP_STYLE_HIGHLIGH
 rule (name:VAR_HHGROUP_STRINGLIST_HIGHLIGHT4_ITEMS) { VAR_HHGROUP_STYLE_HIGHLIGHT4_STYLE }
 rule (name:VAR_GENERAL_ITEMS5) { VAR_GENERAL_STYLE5 }
 rule (name:VAR_GENERAL_ITEMS6) { VAR_GENERAL_STYLE6 }
+
 
 
 
@@ -337,6 +339,7 @@ label: Hide these items
 */
 #define VAR_HIDES_HIDEBYDEFAULT ["Vial","Bucket","Jug","Beer glass","Vial of water","Bucket of water","Jug of water","Bones","Big bones","Ashes","Seaweed","Broken arrow","Empty plant pot","Weeds"]
 apply (name:VAR_HIDES_HIDEBYDEFAULT) { hidden = true; }
+
 
 
 
@@ -1483,6 +1486,7 @@ enum: ["Dagannoth ribs","Ensouled dagannoth head","Brimstone key"]
 CONST_DAGANNOTH_RULE (name:VAR_DAGANNOTH_ENUMLIST_FILTER_TERTIARY) {
   hidden = true;
 }
+
 
 
 
@@ -4725,6 +4729,7 @@ CONST_ALCHEMICALHYDRA_RULE (name:VAR_ALCHEMICALHYDRA_ENUMLIST_FILTER_TERTIARY) {
 
 
 
+
 /*@ define:module:cox
 ---
 name: CoX
@@ -4770,6 +4775,7 @@ rule (name:"revitalisation*") {
 rule (name:"xeric's aid*") {
   VAR_COX_XER_USERSTYLE
 }
+
 
 
 
@@ -4838,6 +4844,7 @@ rule (name:"smelling salts*") { VAR_TOA_SMS_STYLE }
 rule (name:"silk dressing*") { VAR_TOA_SLD_STYLE }
 rule (name:"blessed crystal scarab*") { VAR_TOA_BCS_STYLE }
 rule (name:"honey locust*") { VAR_TOA_HNL_STYLE }
+
 
 
 
@@ -5108,6 +5115,7 @@ rule (name:"Urium remains") { VAR_SOM_URIUM_STYLE }
 
 
 
+
 /*@ define:module:defender
 name: Defenders
 */
@@ -5131,6 +5139,7 @@ exampleItemId: 12954
 #define VAR_DEFENDER_EQUIP_DEFENDER_STYLE backgroundColor = "#80000000";showLootbeam = true;sound = 6765;icon = CurrentItem();
 
 rule (name:VAR_DEFENDER_EQUIP_DEFENDER_LIST) { hidden = false; VAR_DEFENDER_EQUIP_DEFENDER_STYLE }
+
 
 
 
@@ -5178,7 +5187,7 @@ label: Style
 group: Tier S
 exampleItem: Executioner's axe head
 */
-#define VAR_UNIQUE_STIER_CUSTOMSTYLE hidden = false;textColor = "#ff0000";backgroundColor = "#ffffff";borderColor = "#ff0000";fontType = 3;showLootbeam = true;sound = "loot2.wav";
+#define VAR_UNIQUE_STIER_CUSTOMSTYLE hidden = false;textColor = "#ff0000";backgroundColor = "#ffffff";borderColor = "#ff0000";fontType = 3;showLootbeam = true;showValue = true;sound = "loot2.wav";
 
 /*@ define:input:uniques
 type: style
@@ -5186,7 +5195,7 @@ label: Style
 group: Tier A
 exampleItem: Brimstone key
 */
-#define VAR_UNIQUE_ATIER_CUSTOMSTYLE hidden = false;textColor = "#ffffff";backgroundColor = "#af6025";borderColor = "#ffffff";textAccent = 3;showLootbeam = true;sound = "loot1.wav";
+#define VAR_UNIQUE_ATIER_CUSTOMSTYLE hidden = false;textColor = "#ffffff";backgroundColor = "#af6025";borderColor = "#ffffff";textAccent = 3;showLootbeam = true;showValue = true;sound = "loot1.wav";
 
 /*@ define:input:uniques
 type: style
@@ -5194,7 +5203,7 @@ label: Style
 group: Tier B
 exampleItem: Araxyte head
 */
-#define VAR_UNIQUE_BTIER_CUSTOMSTYLE hidden = false;textColor = "#000000";backgroundColor = "#af6025";borderColor = "#000000";textAccent = 3;sound = "loot1.wav";
+#define VAR_UNIQUE_BTIER_CUSTOMSTYLE hidden = false;textColor = "#000000";backgroundColor = "#af6025";borderColor = "#000000";textAccent = 3;showValue = true;sound = "loot1.wav";
 
 /*@ define:input:uniques
 type: style
@@ -5202,12 +5211,13 @@ label: Style
 group: Tier C
 exampleItem: Dark totem top
 */
-#define VAR_UNIQUE_CTIER_CUSTOMSTYLE hidden = false;textColor = "#af6025";backgroundColor = "#350d0d";borderColor = "#af6025";textAccent = 3;sound = "loot1.wav";
+#define VAR_UNIQUE_CTIER_CUSTOMSTYLE hidden = false;textColor = "#af6025";backgroundColor = "#350d0d";borderColor = "#af6025";textAccent = 3;showValue = true;sound = "loot1.wav";
 
 rule (name:VAR_UNIQUE_STIER) { VAR_UNIQUE_STIER_CUSTOMSTYLE }
 rule (name:VAR_UNIQUE_ATIER) { VAR_UNIQUE_ATIER_CUSTOMSTYLE }
 rule (name:VAR_UNIQUE_BTIER) { VAR_UNIQUE_BTIER_CUSTOMSTYLE }
 rule (name:VAR_UNIQUE_CTIER) { VAR_UNIQUE_CTIER_CUSTOMSTYLE }
+
 
 
 
@@ -5280,6 +5290,7 @@ CONST_POTION_HIGHLIGHT("*bastion potion*",      VAR_POTION_BASTION_USERSTYLE)
 
 
 
+
 /*@ define:module:clues
 ---
 name: Clues
@@ -5296,37 +5307,37 @@ description: |
 type: style
 label: Beginner clue
 */
-#define VAR_CLUE_BEGINNER_CUSTOMSTYLE hidden = false;textColor = "#ffffff";backgroundColor = "#beb287";borderColor = "#ffffff";menuTextColor = "#ffe0e0e0";
+#define VAR_CLUE_BEGINNER_CUSTOMSTYLE hidden = false;textColor = "#ffc7ff79";backgroundColor = "#00bfb388";borderColor = "#00ffffff";menuTextColor = "#ffc7ff79";icon = CurrentItem();
 
 /*@ define:input:clues
 type: style
 label: Easy clue
 */
-#define VAR_CLUE_EASY_CUSTOMSTYLE hidden = false;textColor = "#00ff00";backgroundColor = "#beb287";borderColor = "#00ff00";menuTextColor = "#29802d";
+#define VAR_CLUE_EASY_CUSTOMSTYLE hidden = false;textColor = "#ffc7ff79";backgroundColor = "#00bfb388";borderColor = "#00ffffff";menuTextColor = "#ffc7ff79";icon = CurrentItem();
 
 /*@ define:input:clues
 type: style
 label: Medium clue
 */
-#define VAR_CLUE_MEDIUM_CUSTOMSTYLE hidden = false;textColor = "#00ffff";backgroundColor = "#beb287";borderColor = "#00ffff";menuTextColor = "#569699";
+#define VAR_CLUE_MEDIUM_CUSTOMSTYLE hidden = false;textColor = "#ff00ff21";backgroundColor = "#00bfb388";borderColor = "#00ffffff";menuTextColor = "#ff00ff21";showValue = false;icon = CurrentItem();
 
 /*@ define:input:clues
 type: style
 label: Hard clue
 */
-#define VAR_CLUE_HARD_CUSTOMSTYLE hidden = false;textColor = "#ff00ff";backgroundColor = "#beb287";borderColor = "#ff00ff";menuTextColor = "#833798";
+#define VAR_CLUE_HARD_CUSTOMSTYLE hidden = false;textColor = "#ff00f0ff";backgroundColor = "#00bfb388";borderColor = "#00ffffff";menuTextColor = "#ff00f0ff";icon = CurrentItem();
 
 /*@ define:input:clues
 type: style
 label: Elite clue
 */
-#define VAR_CLUE_ELITE_CUSTOMSTYLE hidden = false;textColor = "#ffff00";backgroundColor = "#beb287";borderColor = "#ffff00";menuTextColor = "#bda518";
+#define VAR_CLUE_ELITE_CUSTOMSTYLE hidden = false;textColor = "#ff4a92ff";backgroundColor = "#00bfb388";borderColor = "#00ffffff";menuTextColor = "#ff4a92ff";showLootbeam = false;icon = CurrentItem();
 
 /*@ define:input:clues
 type: style
 label: Master clue
 */
-#define VAR_CLUE_MASTER_CUSTOMSTYLE hidden = false;textColor = "#ff0000";backgroundColor = "#beb287";borderColor = "#ff0000";menuTextColor = "#9b3026";
+#define VAR_CLUE_MASTER_CUSTOMSTYLE hidden = false;textColor = "#ffff0000";backgroundColor = "#00bfb388";borderColor = "#00ffffff";menuTextColor = "#ffff0000";icon = CurrentItem();
 
 
 rule (name:["scroll box (beginner)", "clue scroll (beginner)", "reward casket (beginner)", "challenge scroll (beginner)"]) {
@@ -5347,6 +5358,7 @@ rule (name:["scroll box (elite)", "clue scroll (elite)", "reward casket (elite)"
 rule (name:["scroll box (master)", "clue scroll (master)", "reward casket (master)", "challenge scroll (master)"]) {
   VAR_CLUE_MASTER_CUSTOMSTYLE
 }
+
 
 
 
@@ -5444,6 +5456,7 @@ rule (noted:false && name:CONST_HERB_HERBS) {}
 
 
 
+
 /*@ define:module:currency_/_tokens
 ---
 name: Currency / Tokens
@@ -5464,6 +5477,7 @@ exampleItemId: 11849
 #define VAR_CURRENCY_USERSTYLE textColor = "#beb287";icon = CurrentItem();
 
 apply (name:VAR_CURRENCY_ITEMS) { VAR_CURRENCY_USERSTYLE }
+
 
 
 
@@ -5524,7 +5538,7 @@ label: Style
 group: '++Insane tier'
 exampleItem: Torva platebody (damaged)
 */
-#define VAR_VALUE_T5_CUSTOMSTYLE hidden = false;textColor = "#ff0000";backgroundColor = "#ffffff";borderColor = "#ff0000";textAccent = 3;showLootbeam = true;
+#define VAR_VALUE_T5_CUSTOMSTYLE hidden = false;textColor = "#ff0000";backgroundColor = "#ffffff";borderColor = "#ff0000";textAccent = 3;showLootbeam = true;showValue = false;
 
 /*@ define:input:item_values
 type: style
@@ -5564,7 +5578,7 @@ label: Style
 group: Low tier
 exampleItem: Rune platebody
 */
-#define VAR_VALUE_T0_CUSTOMSTYLE hidden = false;textColor = "#66b2ff";
+#define VAR_VALUE_T0_CUSTOMSTYLE hidden = false;textColor = "#66b2ff";sound = "loot1.wav";
 
 /*@ define:input
 type: number
